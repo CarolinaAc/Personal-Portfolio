@@ -63,6 +63,7 @@ strong { font-weight: var(--fw-bold) }
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
+    padding: 0.5em;
 }
 
 /* Buttons */
@@ -213,19 +214,19 @@ header {
     transform: rotate(.625turn);
 }
 
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
 .nav-open .hamburger::after {
     opacity: 0;
 }
 
-
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px)
+}
 
 .hamburger {
     display: block;
     position: relative;
 }
+
 
 .hamburger,
 .hamburger::before,
