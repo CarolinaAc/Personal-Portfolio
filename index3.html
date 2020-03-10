@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carolina Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        
+
+        <!-- Update these with your own fonts -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index3.html"><i class="fas fa-code"></i></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Carolina A.</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="./img/profile-pic.jpg" alt="a picture of something" class="intro__img">
+        </section>
+        
+        
+        <!-- About me will make it either cards or slides from bootstrap -->
+        <section class="about-me " id="about">
+            <h2 class="section__title section__title--about">Who am I</h2>
+            <div class="slideshow-container">
+                        
+            <div class="about-me__body mySlides fade">
+            <div class="about text">
+                <h3>Healthcare background</h3>
+                <p>I graduated as a physiotherapist in 2015 in a small island of the Atlantic Ocean and just one year after that I took my chances and moved to London in search for better professional and personal development opportunities.</p>
+                <p>Thanks to stepping outside my comfort zone, I started to see the world differently. Meeting people from all walks of life and learning from  improved my communicational skills greatly.</p>
+                <p>This experience also motivated me to keep learning different things, both related and unrelated to my working environment. </p>
+                <p>Little did I know that I would be able to make better use of my skills in a different setting. </p>
+            </div> <!-- / history -->
+            </div>
+
+            <div class="about-me__body mySlides fade">
+            <div class="about text">
+                <h3>My passion</h3>
+                <p>As I have always been into learning and challenging my brain, I would find myself playing puzzle games and studying different things by myself on my spare time. I learnt some languages, I learnt to play basic piano songs, I learnt new recipes, you name it.</p>
+                <p>So when I found FreeCodeCamp and realised I loved coding, I started to code as ofted as I could. The joy of solving a problem I had been stuck for a while is something out of this world, I had to save money to be able to stop working and study full time, so I could make it my profession.</p>
+                <p>And so, I finished my last placement in December 2019 to started working on proyects and attending Hackatons and other coding meetups to better direct my learning and create my own projects.</p>
+            </div> <!-- / education -->
+            </div>
+
+            <div class="about-me__body mySlides fade">
+                <div class="about text">
+                    <h3>My hobbies</h3>
+                    <p>As a learning adict, I must say that I find great pleassure in reading, problem solving and watching documentaries. I often find myself just testing or playing random puzzle or logic games online just for the sake of challenging myself (and now that I have been attending to hackatons I have endless ways of doing so in codewars).</p>
+                    <p>On the other hand, I am also very active, loving sports like hiking, hockey, yoga, surfing and bouldering (although I have a hate-love relationship with this last one, I will overcome my fears eventually)</p>
+                    <p>However, in terms of growing and learning, I can say that travelling is one of the things that have helped me the most.</p><!--insert reading, gaming and others-->
+                    
+                </div> <!-- / hobbies -->
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <div class="lowerBtns">
+            <a href="#work" class="btn">My Work</a>
+            <br/>
+
+            <div style="text-align:center; margin-top: 1em;">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            </div>
+        </section>
+        
+        
+        <!-- skills -->
+        <section class="my-skills" id="skills">
+           <h2 class="section__title section__title--skills">My skills</h2>
+           <p class="section__subtitle section__subtitle--skills">Front-End Development</p>
+           
+           <div class="my-skill"> <!--add pictures-->
+            <ul>
+                <li>
+                    
+                    <!-- HTML5 -->
+                <p style="width:90%" data-value="90">HTML5</p>
+                    <progress max="100" value="90" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>
+                    
+                    <!-- CSS3 -->
+                <p style="width:70%" data-value="70">CSS3</p>
+                    <progress max="100" value="70" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>
+                    
+                    <!-- JavaScript -->
+                <p style="width:80%" data-value="80">JavaScript</p>
+                    <progress max="100" value="80" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>
+                    
+                </li>
+                <li>
+                    
+                <!-- Bootstrap -->
+                <p style="width:40%" data-value="40">Bootstrap</p>
+                    <progress max="100" value="40" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>
+                    
+                    <!-- jQuery -->
+                <p style="width:40%" data-value="40">jQuery</p>
+                    <progress max="100" value="40" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>
+                    
+                    <!-- React -->
+                <p style="width:60%" data-value="60">React</p>
+                <progress max="100" value="60" class="skill">
+                        <div class="progress-bar">
+                        </div>
+                    </progress>     
+                    
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+</section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title-work">My work</h2>
+            <p class="section__subtitle section__subtitle-work"> A selection of my projects</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="https://carolinaac.github.io/Product-Landing-Page-TARDIS/" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/project-miniature1.jpg" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="project-title portfolio__text">Product landing page: TARDIS</h3>
+                    <p class="project-description portfolio__text">Built with HTML and CSS. Styling in progress</p>
+
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="https://carolinaac.github.io/Caesar-cipher/" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/project-miniature3.jpg" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="project-title portfolio__text">Caesar Cipher</h3>
+                    <p class="project-description portfolio__text">Built with JavaScript. Styling with Sass in progress</p>
+
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="https://carolinaac.github.io/Travel-Survey/" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/project-miniature4.jpg" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="project-title portfolio__text">Survey form</h3>
+                    <p class="project-description portfolio__text">Built with React. Styling in progress</p>
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="https://carolinaac.github.io/Calculator/" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/project-miniature2.jpg" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="project-title portfolio__text"> Calculator</h3>
+                    <p class="project-description portfolio__text">Built with JavaScript. Styled with Bootstrap</p>
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="https://carolinaac.github.io/Tic-tac-toe-React/#" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/tic-tac-toe.jpg" alt="" class="portfolio__img">
+                   </div> 
+                   <h3 class="project-title portfolio__text">Tic-tac-toe</h3>
+                    <p class="project-description portfolio__text">Built with React. Styling in progress</p>
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="https://carolinaac.github.io/Meme-Generator/" class="portfolio__item">
+                    <div class="portfolio__img--container">
+                    <img src="./img/project-miniature5.jpg" alt="" class="portfolio__img">
+                    </div>
+                    <h3 class="project-title portfolio__text">Meme Generator</h3>
+                    <p class="project-description portfolio__text">Built with React. Styled with CSS</p>
+                </a>
+
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:carolinaacosta.nuez@gmail.com" class="footer__link">Contact me on:</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/carolinaac">
+                        <i class="fab fa-github-alt"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://linkedin.com">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:carolinaacosta.nuez@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a></li>
+                
+            </ul>
+        </footer>
+      <script src="./js/index.js"></script>
+    </body> 
+     
+</html>
